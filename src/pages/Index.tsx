@@ -128,14 +128,6 @@ const Index = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-auto-blue-600 to-auto-blue-700 hover:from-auto-blue-700 hover:to-auto-blue-800 text-white font-montserrat font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-scale-in"
-                onClick={() => window.open('https://www.avito.ru/user/387b19b1dc19f7ddf7692a6f45049371/profile?src=sharing', '_blank')}
-              >
-                <Icon name="Car" className="mr-2" size={24} />
-                Выбрать автомобиль
-              </Button>
-              <Button 
                 variant="outline" 
                 size="lg"
                 className="border-2 border-auto-blue-600 text-auto-blue-600 hover:bg-auto-blue-600 hover:text-white font-montserrat font-semibold px-8 py-4 rounded-xl transition-all duration-300"
@@ -165,6 +157,80 @@ const Index = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Car Selection CTA Section */}
+      <section className="py-20 px-4 bg-gradient-to-br from-auto-blue-700 to-auto-blue-900 relative overflow-hidden">
+        <div className="container mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+            <div className="relative z-10">
+              <div className="space-y-6">
+                <Badge className="bg-auto-blue-200 text-auto-blue-800 font-montserrat font-semibold text-sm px-4 py-1">
+                  Более 500 автомобилей в наличии
+                </Badge>
+                <h2 className="text-4xl lg:text-5xl font-montserrat font-bold text-white leading-tight">
+                  Найдите идеальный автомобиль для себя
+                </h2>
+                <p className="text-xl text-auto-blue-100 font-opensans leading-relaxed">
+                  Профессиональная помощь в выборе, проверенные автомобили с полной историей, 
+                  честные цены и гарантия юридической чистоты.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4 pt-6">
+                  <Button 
+                    size="lg" 
+                    className="bg-white text-auto-blue-800 hover:bg-auto-blue-50 font-montserrat font-bold px-10 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 text-lg"
+                    onClick={() => window.open('https://www.avito.ru/user/387b19b1dc19f7ddf7692a6f45049371/profile?src=sharing', '_blank')}
+                  >
+                    <Icon name="Car" className="mr-3" size={28} />
+                    Выбрать автомобиль
+                  </Button>
+                  
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    className="border-2 border-white text-white hover:bg-white hover:text-auto-blue-800 font-montserrat font-semibold px-8 py-4 rounded-2xl transition-all duration-300 text-lg"
+                    onClick={() => window.open('https://t.me/+W0ZJqg_iYY82MWIy', '_blank')}
+                  >
+                    <Icon name="Send" className="mr-2" size={24} />
+                    Задать вопрос
+                  </Button>
+                </div>
+                
+                <div className="flex items-center space-x-6 pt-4">
+                  <div className="flex items-center text-auto-blue-100">
+                    <Icon name="CheckCircle" size={20} className="text-green-400 mr-2" />
+                    <span className="font-opensans">Гарантия качества</span>
+                  </div>
+                  <div className="flex items-center text-auto-blue-100">
+                    <Icon name="Shield" size={20} className="text-green-400 mr-2" />
+                    <span className="font-opensans">Юридическая чистота</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-all duration-500">
+                <img 
+                  src="https://cdn.poehali.dev/files/1690c080-0d07-45cf-9e09-019095292c8c.png" 
+                  alt="Выбор автомобиля в Авто Маркет"
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-auto-blue-900/20 to-transparent"></div>
+              </div>
+              
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-auto-blue-400 rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-auto-blue-300 rounded-full opacity-15 animate-pulse delay-1000"></div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Background pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0 bg-repeat" style={{backgroundImage: "url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='7' cy='7' r='7'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')"}}></div>
         </div>
       </section>
 
